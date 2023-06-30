@@ -1,0 +1,12 @@
+{
+    "folders": [
+		{
+			"name": "TeensySPIESP",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TeensySPIESP",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"name": "TeensySPIESP",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TeensySPIESP"
+	}
+}
