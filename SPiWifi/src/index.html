@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+   #myDiv{
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        background:gray;
+        margin: 10px;
+
+    }
+    .componentStatus{
+        height: 40px;
+        display:flex;
+        justify-content:flex-end;
+        padding-right:15px;
+        align-items: center;
+        background: rgb(245, 239, 239);
+        border: black solid;
+    }
+</style>
+<body>
+    <footer>
+        <div class="componentStatus">
+            <div id="myDiv">
+            </div>
+            <p id="text">Desconectado</p>
+        </div>
+    </footer>
+</body>
+<script>
+    //Variable de estado de conexion  0: No conectado 1 : Conectado
+    var status = "0"
+    setInterval( //cada 500ms
+    function statusConection(){
+        fetch('http://192.168.0.14/medida') //url consulta continua de estado
+        .then(response => response.text())
+        .then(data => console.log(data)) // OK 1
+        }
+        ,500);
+</script>
+</html>

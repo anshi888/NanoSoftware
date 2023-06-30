@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        text-align: center;
+    }
+    
+    body {
+        background: rgb(211, 197, 252);
+    }
+    
+    label {
+        text-align: center;
+        font-size: 33px;
+    }
+    
+    #boton {
+        width: 320px;
+        font-size: 23px;
+        height: 40px;
+        border-radius: 23px;
+    }
+    
+    #entrada {
+        border-radius: 23px;
+        width: 320px;
+        height: 40px;
+        margin: 9px;
+    }
+</style>
+
+<body>
+    <h1> Servidor HTML del Nano Teensy v2.0</h1>
+    <form action="/get" method="post">
+        <label>Ton[ns]:<input id="entrada" type="text" name="ton" value="tonxx"></label>
+        <br>
+        <br>
+
+        <label>Toff[us]:<input id="entrada" type="text" name="toff" value="toffxx"></label>
+        <br>
+        <br>
+
+        <label>Cantidad de Pulsos:<input id="entrada" type="text" name="pulsos" value="pulsosxx"></label>
+        <br><br>
+        <input id="boton" type="submit" value="Start">
+    </form>
+    <br>
+    <form action="/stop" method="get">
+        <input id="boton" type="submit" value="Stop">
+    </form>
+</body>
+
+</html>

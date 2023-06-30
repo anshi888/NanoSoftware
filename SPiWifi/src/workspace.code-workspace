@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"name": "Potenciostato_iot",
+			"path": "..\\..\\Potenciostato_iot"
+		},
+		{
+			"name": "SPiWifi",
+			"path": ".."
+		}
+	],
+    "settings": {}
+}
